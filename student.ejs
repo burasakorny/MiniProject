@@ -1,0 +1,11 @@
+<h1>นักเรียนในห้องนี้</h1>
+   <div class="container">
+       <% students.forEach(student => { %>
+           <div class="card">
+               <h2><%= student.name %></h2>
+               <p><strong>Age:</strong> <%= student.age %></p>
+               <p><strong>Email:</strong> <%= student.email %></p>
+               <p><strong>Phone:</strong> <%= student.phone %></p>
+           </div>
+       <% }); %>
+   </div>
